@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>project of html,css and javascript</title>
+    <link rel="icon" type="image/x-icon" href="b.png">
+  </head>
+<body>
+  <center><h1>Welcome to my project</h1>
+    <div>
+      <h3 style="color:#F00">Personal Info</h3>
+       Name:<input type="text" id="myText" value="">
+  <p style="color:#F00;" color="#F00" id="n"></p>
+  Password:
+  <input type="password" name="password" id="password"> <p style="color:#F00;" color="#F00" id="o"></p>
+  E-mail id: <input type="mail" name="name" id="name"> <p style="color:#F00;" color="#F00" id="p"></p>
+  Gender: <input type="radio" name="radiogroup1" value="radio" id="radiogroup1"> Male
+  <input type="radio" name="radiogroup1" value="radio" id="radiogroup2"> Female<br><br>
+  Contact#: <input type="number" name="mobile" id="mobile"> <p style="color:#F00;" color="#F00" id="lj"></p>
+  <h3 style="color:#F00">Educational Qualification</h3>
+  Degree: <select name="degree" id="degree">
+          <option selected>-- Select Group --</option>
+  
+          <option>B.Com</option>
+  
+          <option>B.sc</option>
+  
+          <option>B.com Computers</option>
+  
+          <option>B.A</option>
+  
+        </select><br>
+  
+        <br>
+  
+  Engineering: <select name="eng" id="eng" onchange="myFun()">
+  
+          <option selected>-- Select Group --</option>
+  
+          <option>CSE</option>
+  
+          <option>ECE</option>
+  
+          <option>CIVIL</option>
+  
+          <option>EEE</option>
+  
+        </select><br><br>
+  
+  Hobbies: <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1">Playing chess
+  
+  <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup2">Reading Books<br><br>
+  
+  <h3 style="color:#F00">Address</h3>
+  
+  <textarea name="textarea" cols="35" rows="5" id="textarea"></textarea><br>
+  
+  <br>
+  
+  Attch Resume: <input type="file" name="fileField" id="fileField"><br><br></form>
+  <img onclick="myFunction()" src="submit.png">
+  <Br><br><br>
+  <p id="demo"></p><Br><br><br>
+  <p id="emo"></p>
+  <v id="he"></v>
+  </div></center><h2 align="right">Made by Swapnil</h2>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myText").value;
+    var b = document.getElementById("name").value;
+    var v = document.getElementById("mobile").value;
+    var m = document.getElementById("password").value;
+    if(x.length>0){
+      alert(x+ " your form is submitted successfully");
+      document.getElementById("demo").innerHTML = "<br><h4><g><u>Message box</u></g></h4><U>" +x+ "</U> your form is submitted successfully<br>Mail us:<a href=mailto:pradhanswapnil02@gmail.com target=_blank> pradhanswapnil02@gmail.com</a><br>Your mail is:"+b+ "<br>Your mobile is +91 "+v+"<br>";
+      document.getElementById("emo").innerHTML = "<br><br><font>Alert</font><br><br><br><li>Please don't share your password and<br> personal website mail/mobile to <br>anyone.</li><li>we will notify you when your account<br> will be alerted.</li><li>please support us to notify all update.</li>";
+    document.getElementById("he").innerHTML = "<img src='final-comp.gif'><m><br><br>Thank you for submitting<br><br></m>";
+    }else{
+      alert("enter correct name");
+      document.getElementById("n").innerHTML = "enter your name ";
+    }
+    if(b.length>5){
+      document.getElementById("demo").innerHTML = "<br><h4><g><u>Message box</u></g></h4><U>" +x+ "</U> your form is submitted successfully<br>Mail us:<a href=mailto:pradhanswapnil02@gmail.com target=_blank> pradhanswapnil02@gmail.com</a><br>Your mail is:"+b+ "<br>Your mobile is +91 "+v+"<br>";
+      document.getElementById("emo").innerHTML = "<br><br><font>Alert</font><br><br><br><li>Please don't share your password and<br> personal website mail/mobile to <br>anyone.</li><li>we will notify you when your account<br> will be alerted.</li><li>please support us to notify all update.</li>";
+    document.getElementById("he").innerHTML = "<img src='final-comp.gif'><m><br><br>Thank you for submitting<br><br></m>";
+    }else{
+      alert("enter correct mail");
+      document.getElementById("p").innerHTML = "enter your mail";
+    }
+    if(v.length>10){
+      document.getElementById("demo").innerHTML = "<br><h4><g><u>Message box</u></g></h4><U>" +x+ "</U> your form is submitted successfully<br>Mail us:<a href=mailto:pradhanswapnil02@gmail.com target=_blank> pradhanswapnil02@gmail.com</a><br>Your mail is:"+b+ "<br>Your mobile is +91 "+v+"<br>";
+      document.getElementById("emo").innerHTML = "<br><br><font>Alert</font><br><br><br><li>Please don't share your password and<br> personal website mail/mobile to <br>anyone.</li><li>we will notify you when your account<br> will be alerted.</li><li>please support us to notify all update.</li>";
+    document.getElementById("he").innerHTML = "<img src='final-comp.gif'><m><br><br>Thank you for submitting<br><br></m>";
+    }else{
+      alert("enter correct number");
+      document.getElementById("lj").innerHTML = "enter your number";
+    }
+    if(m.length>0){
+      document.getElementById("demo").innerHTML = "<br><h4><g><u>Message box</u></g></h4><U>" +x+ "</U> your form is submitted successfully<br>Mail us:<a href=mailto:pradhanswapnil02@gmail.com target=_blank> pradhanswapnil02@gmail.com</a><br>Your mail is:"+b+ "<br>Your mobile is +91 "+v+"<br>";
+      document.getElementById("emo").innerHTML = "<br><br><font>Alert</font><br><br><br><li>Please don't share your password and<br> personal website mail/mobile to <br>anyone.</li><li>we will notify you when your account<br> will be alerted.</li><li>please support us to notify all update.</li>";
+    document.getElementById("he").innerHTML = "<img src='final-comp.gif'><m><br><br>Thank you for submitting<br><br></m>";
+    }else{
+      alert("enter correct password");
+      document.getElementById("o").innerHTML = "enter your password";
+    }
+  }
+  </script>
+  <style>
+  body{
+  Background-image: url("b.png");
+  Background-postion: fixed;
+  Background-size: 100% 100%;
+  Background-width:fit to content;
+  }
+  div{
+    background-color: #CCFF66;
+    width: 600px;
+    align: center;
+    top:50%;
+    left:50%;
+    align: center;
+    background-position: center;
+    box-shadow: 0px 50px 100px #FFB61;
+    border-style: solid;
+    border-color: orange;
+  }
+  img{
+    width: 170px;
+  }
+  #demo{
+     background-color: #177244;
+     border-radius: 5%;
+     width: 300px;
+     color: white;
+     font-weight: bolder;
+  }
+   #demo:hover{
+    background-color: aqua;
+    color: black;
+    width: 320px;
+    font-size: 110%;
+   }
+  a{
+    text-decoration: none;
+  }
+  g{
+    border-style: solid;
+    border-color: white;
+  }
+  #emo{
+    background-color: #177244;
+    border-radius: 2%;
+    width: 400px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+  }
+  #emo:hover{
+    background-color: aqua;
+    color: black;
+    width: 420px;
+    font-size: 110%;
+   }
+  h4{
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  font{
+    font-weight: bolder;
+    color:#F00;
+    padding: 10px 5px;
+    border-style: solid;
+    border-color: red;
+    background-color: white;
+  }
+  m{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: aqua;
+  }
+  #n{
+    color:#F00:
+  }
+  </style>
